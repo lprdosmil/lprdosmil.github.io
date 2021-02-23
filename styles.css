@@ -21,9 +21,6 @@ body{
     max-width: 575px;
     padding: 2rem;
     position: fixed;
-    /**/
-    display: none;
-    /**/
     left: 0;
     bottom: 0;
     z-index: 9999999;
