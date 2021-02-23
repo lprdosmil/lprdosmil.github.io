@@ -1,0 +1,223 @@
+*{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    color: #212223;
+    font-size: 1rem;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    background: #EFF6FF;
+}
+.devsite-snackbar-snack{
+    width: 100%;
+    max-width: 575px;
+    padding: 2rem;
+    position: fixed;
+    /**/
+    display: none;
+    /**/
+    left: 0;
+    bottom: 0;
+    z-index: 9999999;
+}
+.devsite-snackbar-inner{
+    width: 100%;
+    padding: 1.15rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.35rem;
+    background: #202124;
+}
+.devsite-snackbar-message{
+    padding: 0.65rem;
+    font-size: 0.875rem;
+    color: #ddd;
+}
+.devsite-snackbar-link{
+    padding: 0 0.65rem;
+    font-size: 0.875rem;
+    background: transparent;
+    color: #669df6;
+}
+.navbar{
+    width: 100%;
+    padding: 0.35rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+.navbar-container{
+    width: 100%;
+    max-width: 1024px;
+    padding: 0.65rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-title a{
+    margin-right: 0.85rem;
+    font-size: 1.85rem;
+    color: #818CF8;
+}
+.navbar-nav a{
+    padding: 0.25rem;
+    margin: 0 0.25rem;
+    cursor: pointer;
+    transition: color 1s ease-in-out;
+}
+.navbar-nav a:hover{ 
+    color: #818CF8;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.65rem;
+    padding-top: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-div{
+    max-width: 512px;
+    padding: 1.35rem;
+}
+.header-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-title > h1 > *{
+    font-size: 2.65rem;
+}
+.header-title > h1 > *:first-child{
+    color: #818CF8;
+}
+.header-title > h1 > *:last-child{
+    color: #3F3F46;
+    border-bottom: 3px solid #818CF8;
+    border-radius: 1px;
+}
+.header-title > h2{
+    padding: 1.25rem 0.5rem;
+    font-size: 1.85rem;
+    color: #3F3F46;
+    text-align: center;
+}
+.check-points{
+    width: 100%;
+    padding: 0.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.check-point-container{
+    width: 50%;
+    padding: 0.65rem;
+}
+.check-point{
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+    background: #E4E4E7;
+    border-radius: 0.35rem;
+}
+.check-point > span{
+    margin-left: 0.65rem;
+    color: #3F3F46;
+    font-size: 1.05rem;
+}
+.header-image{
+    padding: 1rem;
+    margin: auto;
+}
+.cards{
+    width: 100%;
+    max-width: 1024px;
+    padding: 1rem;
+    margin: 1.8rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #E2E8F0;
+}
+.card-container{
+    width: 33%;
+    padding: 0.875rem;
+}
+.card{
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 0.35rem;
+    box-shadow: 0.2rem 0.15rem 0.2rem #ccc;
+}
+.card-title{
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    text-align: center;
+    box-shadow: 0.2rem 0.15rem 0.2rem #ddd;
+}
+.card-image{
+    width: 92%;
+    margin: 1rem 4%;
+}
+.card-body{
+    width: 100%;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0.2rem 0.15rem 0.2rem #ccc;
+}
+.card-body > a{
+    font-size: 1rem;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    max-width: 1024px;
+    padding: 1rem;
+    margin: 1.8rem auto;
+    border-top: 1px solid #E2E8F0;
+}
+@media (max-width: 768px){
+    .header-div:last-child{
+        display: none;
+    }
+    .header-title > h2{
+        font-size: 1.35rem;
+    }
+    .check-point-container{
+        width: 100%;
+    }
+    .card-container{
+        width: 50%;
+    }
+}
+@media (max-width: 574px){
+    .card-container{
+        width: 100%;
+    }
+}
